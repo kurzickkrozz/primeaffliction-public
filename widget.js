@@ -2,7 +2,7 @@
 window.addEventListener('load', () => {
     for (let widget of document.getElementsByTagName('discord-widget')) {
         //getting attributes
-        let id = widget.getAttribute('id') ?? '338870081645838337';
+        let id = widget.getAttribute('id') ?? null;
         let width = widget.getAttribute('width') ?? '350px';
         let height = widget.getAttribute('height') ?? '600px';
         let footerText = widget.getAttribute('footerText') ?? '';
