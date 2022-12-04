@@ -133,7 +133,7 @@
     border-spacing: 0
 }
 .discord-widget {
-    background: black;
+    background: rgba(43, 43, 43, 0.4);
     color: var(--pacolor1);
     text-align: left;
     padding: 15px;
