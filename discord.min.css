@@ -1,6 +1,7 @@
 :root{
     --pacolor1: #610606;
     --paborder: #6e140a;
+    --pabutton: #380303;
 }
 
 .discord-widget {
@@ -254,7 +255,7 @@ span.discord-error {
     line-height: 30px!important;
     z-index: 2;
     color: white;
-    background-color: var(--paborder);
+    background-color: var(--pabutton);
 }
 .discord-join a {
     color: #fff;
