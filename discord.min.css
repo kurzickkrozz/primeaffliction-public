@@ -1,3 +1,9 @@
+:root{
+    --pacolor1: #520505;
+    --paborder: #5d2626;
+    --pablack: #000000;
+}
+
 .discord-widget {
     margin: 0;
     padding: 0;
@@ -128,8 +134,8 @@
     border-spacing: 0
 }
 .discord-widget {
-    background: #0c0f11;
-    color: #798896;
+    background: var(--pablack);
+    color: var(--pacolor1);
     text-align: left;
     padding: 15px;
     margin: 4px;
@@ -138,7 +144,7 @@
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    border: 3px solid #26475d;
+    border: 3px solid var(--paborder);
     border-width: 0;
     border-top-width: 3px;
     box-sizing: border-box
@@ -193,7 +199,7 @@ span.discord-error {
     position: relative;
     white-space: nowrap;
     overflow: hidden
-    color: #26475d !important;
+    color: var(--paborder) !important;
 }
 .discord-user span {
     font-size: .8em;
@@ -249,12 +255,12 @@ span.discord-error {
     line-height: 30px!important;
     z-index: 2;
     color: white;
-    background-color: #26475d
+    background-color: var(--paborder);
 }
 .discord-join a {
     color: #fff;
     text-decoration: none
 }
 .discord-join:hover {
-    background-color: #26475d
+    background-color: var(--paborder);
 }
