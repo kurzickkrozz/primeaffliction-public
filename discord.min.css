@@ -1,7 +1,6 @@
 :root{
-    --pacolor1: #520505;
-    --paborder: #5d2626;
-    --pablack: #000000;
+    --pacolor1: #610606;
+    --paborder: #fa3019;
 }
 
 .discord-widget {
@@ -134,7 +133,7 @@
     border-spacing: 0
 }
 .discord-widget {
-    background: var(--pablack);
+    background: black;
     color: var(--pacolor1);
     text-align: left;
     padding: 15px;
