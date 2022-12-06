@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         }
         //header
         let head = document.createElement('widget-header');
-        let logo = document.createElement('widget-logo') ?? 'https://cdn.discordapp.com/attachments/1028380505923670096/1028380564706840707/pA-ClanTagLogoThicc.png';
+        let logo = document.createElement('widget-logo') ?? 'https://cdn.discordapp.com/attachments/1028380505923670096/1045955679711666206/pA-ClanTagLogo.png';
         let count = document.createElement('widget-header-count');
         head.append(logo, count);
         //footer
@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
         joinButton.innerText = 'Join';
         footer.append(footerInfo, joinButton);
         //style
-        widget.innerHTML = '<link rel="stylesheet" href="https://shhh7612.github.io/css/discordWidget.css">';
+        widget.innerHTML = '<link rel="stylesheet" href="./discordwidget.css">';
         widget.style.height = height;
         widget.style.width = width;
         widget.style.setProperty("--color", color);
@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
         widget.style.setProperty("--textColor", textColor);
         widget.style.setProperty("--buttonColor", `#${LDColor(color.replace('#', ''), -10)}`);
         widget.style.setProperty("--statusColor", statusColor);
-        //appending head, body and footer to the widget
+        //appending head, body and footer to the widget.
         widget.append(head, body, footer);
         //data
         fetch(`https://discord.com/api/guilds/${id}/widget.json`).then(data => {
