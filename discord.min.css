@@ -198,7 +198,7 @@ span.discord-error {
 .discord-user {
     position: relative;
     white-space: nowrap;
-    overflow: hidden
+    overflow: hidden;
     color: var(--paborder) !important;
 }
 .discord-user span {
