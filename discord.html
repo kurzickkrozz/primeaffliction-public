@@ -1,91 +1,109 @@
-<html><head><style>
+<html>
+    <head>
+        <style>
 
-body{
-font-family: verdana;
-font-size: 12px;
-margin:0;
-color: white;
-}
+        body{
+        font-family: verdana;
+        font-size: 12px;
+        margin:0;
+        color: white;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 0px;
+        }
+        
+        ::-webkit-scrollbar-button:start:decrement,
+        ::-webkit-scrollbar-button:end:increment {
+            height: 0px;
+            display: block;
+            background-color: transparent;
+        }
+        
+        ::-webkit-scrollbar-track-piece {
+            background-color: #1a1a1a;
+            -webkit-border-radius: 0px;
+        }
+        
+        ::-webkit-scrollbar-thumb:vertical {
+            height: 50px;
+            background-color: #6e140a;
+            -webkit-border-radius: 2px;
+        }
+        
+        ::-webkit-scrollbar-thumb:horizontal {
+            width: 50px;
+            background-color: #666;
+            -webkit-border-radius: 0px;
+        }
+        
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://kurzickkrozz.github.io/primeaffliction-public/discord-widget.min.js"></script>
+        <script type="text/javascript">
+        discordWidget.init({
+            serverId: '338870081645838337',
+            theme: 'dark',
+            join: true,
+            alphabetical: false,
+            showAllUsers: true,
+            showNick: true,
+            hideChannels: ['Administration Channel'],
+            allUsersDefaultState: true,
+            });
+            discordWidget.render();
+        </script><link rel="stylesheet" href="https://github.com/kurzickkrozz/primeaffliction-public/blob/discord-widget/discord.min.css" type="text/css">
+        </head>
+        <body>
+            <div class="discord-widget" style="height:100%;margin:0" version="1.0">
+                <ul class="discord-tree" style="margin-top: 0px;">
+                    <li class="discord-channel"></li>
+                    <ul class="discord-userlist"></ul>
+                    <li class="discord-channel"></li>
+                    <ul class="discord-userlist"></ul>
+                    <li class="discord-channel discord-allusers-toggle">▾ Online Users</li>
+                    <ul class="discord-userlist discord-allusers">
+                        <li class="discord-user"><img class="discord-avatar">
+                            <div class="discord-user-status discord-idle"></div>
+                            <span></span>
+                        </li>
+                    </ul>
+                </ul>
+                <p class="discord-users-online">Users Online: 76</p>
+                <p class="discord-join"><a href="https://discord.com/invite/PrimeAffliction" target="_blank">Join Server</a></p><div class="discord-fade">
 
-::-webkit-scrollbar {
-    width: 10px;
-    height: 0px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment {
-    height: 0px;
-    display: block;
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: #1a1a1a;
-    -webkit-border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    height: 50px;
-    background-color: #6e140a;
-    -webkit-border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb:horizontal {
-    width: 50px;
-    background-color: #666;
-    -webkit-border-radius: 0px;
-}
-
-</style>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://kurzickkrozz.github.io/primeaffliction-public/discord-widget.min.js"></script>
-<script type="text/javascript">
-discordWidget.init({
-	serverId: '338870081645838337',
-	theme: 'dark',
-	join: true,
-	alphabetical: false,
-	showAllUsers: true,
-	showNick: true,
-	hideChannels: ['Administration Channel'],
-	allUsersDefaultState: true,
-	});
-	discordWidget.render();
-</script><link rel="stylesheet" href="https://kurzickkrozz.github.io/primeaffliction-public/discord.min.css" type="text/css">
-</head><body><div class="discord-widget" style="height:100%;margin:0" version="1.0"><ul class="discord-tree" style="margin-top: 0px;"><li class="discord-channel"></li><ul class="discord-userlist"></ul><li class="discord-channel"></li><ul class="discord-userlist"></ul><li class="discord-channel discord-allusers-toggle">▾ Online Users</li><ul class="discord-userlist discord-allusers"><li class="discord-user"><img class="discord-avatar"><div class="discord-user-status discord-idle"></div><span></span></li></ul></ul><p class="discord-users-online">Users Online: 76</p><p class="discord-join"><a href="https://discord.com/invite/PrimeAffliction" target="_blank">Join Server</a></p><div class="discord-fade"></div></div>
-
-
-<style>
-
-.discord-fade{
-display:none;
-}
-
-.discord-join{
-position: absolute;
-bottom: 15px;
-width: auto;
-left:15px;
-right:15px;
-border-radius: 3px;
-}
-
-.discord-tree{
-position: absolute;
-left: 15px;
-right:0;
-top:5px;
-bottom:70px;
-overflow-y: auto;
-overflow-x: hidden;
-}
-
-.discord-users-online{
-position: absolute;
-bottom: 50px;
-right: 15px;
-}
-
-</style></body></html>
+                </div>
+            </div>
+        <style>
+            .discord-fade{
+            display:none;
+            }
+            
+            .discord-join{
+            position: absolute;
+            bottom: 15px;
+            width: auto;
+            left:15px;
+            right:15px;
+            border-radius: 3px;
+            }
+            
+            .discord-tree{
+            position: absolute;
+            left: 15px;
+            right:0;
+            top:5px;
+            bottom:70px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            }
+            
+            .discord-users-online{
+            position: absolute;
+            bottom: 50px;
+            right: 15px;
+            }
+        </style>
+    </body>
+</html>
