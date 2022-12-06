@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         }
         //header
         let head = document.createElement('widget-header');
-        let logo = document.createElement('widget-logo') ?? 'https://cdn.discordapp.com/attachments/1028380505923670096/1028380564706840707/pA-ClanTagLogoThicc.png';
+        let logo = document.createElement('widget-logo') ?? 'https://cdn.discordapp.com/attachments/1028380505923670096/1045955679711666206/pA-ClanTagLogo.png';
         let count = document.createElement('widget-header-count');
         head.append(logo, count);
         //footer
