@@ -1,7 +1,10 @@
 :root{
-    --pacolor1: #610606;
-    --paborder: #6e140a;
-    --pabutton: #380303;
+    --channelcolor: #720000;
+    --usertextcolor: #920000;
+    --bordercolor: #200100;
+    --buttoncolor: #720000;
+    --buttoncolorhover: #920000;
+    --embedbackgroundcolor: rgba(43, 43, 43, 50);
 }
 
 .discord-widget {
@@ -134,8 +137,8 @@
     border-spacing: 0
 }
 .discord-widget {
-    background: rgba(43, 43, 43, 50);
-    color: var(--pacolor1);
+    background: var(--embedbackgroundcolor);
+    color: var(--channelcolor);
     text-align: left;
     padding: 15px;
     margin: 4px;
@@ -144,7 +147,7 @@
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-    border: 3px solid var(--paborder);
+    border: 3px solid var(--bordercolor);
     border-width: 0;
     border-top-width: 3px;
     box-sizing: border-box
@@ -199,7 +202,7 @@ span.discord-error {
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    color: var(--paborder) !important;
+    color: var(--usertextcolor) !important;
 }
 .discord-user span {
     font-size: .8em;
@@ -255,12 +258,12 @@ span.discord-error {
     line-height: 30px!important;
     z-index: 2;
     color: white;
-    background-color: var(--pabutton);
+    background-color: var(--buttoncolor);
 }
 .discord-join a {
     color: #fff;
     text-decoration: none
 }
 .discord-join:hover {
-    background-color: var(--paborder);
+    background-color: var(--buttoncolorhover);
 }
